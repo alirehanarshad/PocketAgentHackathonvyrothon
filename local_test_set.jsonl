@@ -1,0 +1,16 @@
+{"prompt":"weather in Lahore in C","history":[],"expected":"<tool_call>{\"tool\":\"weather\",\"args\":{\"location\":\"Lahore\",\"unit\":\"C\"}}</tool_call>"}
+{"prompt":"temp in Tokyo please, F","history":[],"expected":"<tool_call>{\"tool\":\"weather\",\"args\":{\"location\":\"Tokyo\",\"unit\":\"F\"}}</tool_call>"}
+{"prompt":"list my calendar for 2026-05-01","history":[],"expected":"<tool_call>{\"tool\":\"calendar\",\"args\":{\"action\":\"list\",\"date\":\"2026-05-01\"}}</tool_call>"}
+{"prompt":"schedule Team sync for 2026-06-10","history":[],"expected":"<tool_call>{\"tool\":\"calendar\",\"args\":{\"action\":\"create\",\"date\":\"2026-06-10\",\"title\":\"Team sync\"}}</tool_call>"}
+{"prompt":"convert 10 miles to kilometers","history":[],"expected":"<tool_call>{\"tool\":\"convert\",\"args\":{\"value\":10,\"from_unit\":\"miles\",\"to_unit\":\"kilometers\"}}</tool_call>"}
+{"prompt":"convert 3.5 kilograms to pounds","history":[],"expected":"<tool_call>{\"tool\":\"convert\",\"args\":{\"value\":3.5,\"from_unit\":\"kilograms\",\"to_unit\":\"pounds\"}}</tool_call>"}
+{"prompt":"convert 50 USD to EUR","history":[],"expected":"<tool_call>{\"tool\":\"currency\",\"args\":{\"amount\":50,\"from\":\"USD\",\"to\":\"EUR\"}}</tool_call>"}
+{"prompt":"convert 1200 PKR to USD","history":[],"expected":"<tool_call>{\"tool\":\"currency\",\"args\":{\"amount\":1200,\"from\":\"PKR\",\"to\":\"USD\"}}</tool_call>"}
+{"prompt":"run this sql query: SELECT * FROM orders LIMIT 5","history":[],"expected":"<tool_call>{\"tool\":\"sql\",\"args\":{\"query\":\"SELECT * FROM orders LIMIT 5\"}}</tool_call>"}
+{"prompt":"sql: SELECT COUNT(*) FROM users","history":[],"expected":"<tool_call>{\"tool\":\"sql\",\"args\":{\"query\":\"SELECT COUNT(*) FROM users\"}}</tool_call>"}
+{"prompt":"tell me a joke","history":[],"expected":"I cannot help with that using the available tools."}
+{"prompt":"set an alarm for 7 am","history":[],"expected":"I cannot help with that using the available tools."}
+{"prompt":"convert that to euros","history":[],"expected":"I cannot help with that using the available tools."}
+{"prompt":"convert that to EUR","history":[{"role":"user","content":"convert 50 USD to EUR"},{"role":"assistant","content":"<tool_call>{\"tool\":\"currency\",\"args\":{\"amount\":50,\"from\":\"USD\",\"to\":\"EUR\"}}</tool_call>"}],"expected":"<tool_call>{\"tool\":\"currency\",\"args\":{\"amount\":50,\"from\":\"USD\",\"to\":\"EUR\"}}</tool_call>"}
+{"prompt":"now convert that to pounds","history":[{"role":"user","content":"convert 3.5 kilograms to pounds"},{"role":"assistant","content":"<tool_call>{\"tool\":\"convert\",\"args\":{\"value\":3.5,\"from_unit\":\"kilograms\",\"to_unit\":\"pounds\"}}</tool_call>"}],"expected":"<tool_call>{\"tool\":\"convert\",\"args\":{\"value\":3.5,\"from_unit\":\"kilograms\",\"to_unit\":\"pounds\"}}</tool_call>"}
+{"prompt":"mosam Karachi C me batao","history":[],"expected":"<tool_call>{\"tool\":\"weather\",\"args\":{\"location\":\"Karachi\",\"unit\":\"C\"}}</tool_call>"}

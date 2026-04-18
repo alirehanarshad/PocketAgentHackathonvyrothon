@@ -1,0 +1,3 @@
+llama-cpp-python
+gradio
+numpy<2.0.0
